@@ -89,7 +89,7 @@ export const Premier= () => {
     return (
         <>
         <Slider {...settings}>
-            {PremierImages.map((image) => (<poster {...image}/>))}
+            {PremierImages.map((image) => (<Poster {...image}/>))}
         </Slider>  
         </>
     );

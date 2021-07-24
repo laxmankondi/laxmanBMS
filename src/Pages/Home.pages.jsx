@@ -8,8 +8,13 @@ const HomePage = () => {
     <>
     <div className="container mx-auto px-4">
         <h1 className="text-2xl font-bold text-gray-800 my-3">The Best Of Entertainment</h1>
-    <EntertainmentCardSlider/>
-    <Premier/>
+    <EntertainmentCardSlider/>    
+    </div>
+
+    <div>
+        <div className="container mx-auto px-16">
+        <Premier/>
+        </div>
     </div>
     </>
     );
