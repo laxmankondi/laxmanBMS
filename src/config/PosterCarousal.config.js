@@ -1,7 +1,7 @@
 const settings ={
     infinite:false,
     speed: 500,
-    slidesToShow:4,
+    slidesToShow:5,
     slidesToScroll:4,
     InitialSlide:0,
     responsive:[
