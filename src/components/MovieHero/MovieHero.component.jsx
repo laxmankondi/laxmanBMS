@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { MovieContext } from '../../context/movie.context';
 
 import MovieInfo from './Movieinfo.component';
 
 const MovieHero = () => {
+    const { movie } = useContext(MovieContext);
     return (
         <>
         {/*small*/}
@@ -12,7 +14,7 @@ const MovieHero = () => {
                  <MovieInfo/>
                  </div>
                    <div className="w-full h-48 bg-opacity-50 absolute bg-black z-10 bottom-0"/>
-                   <img src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-ODQlICA5OGsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70/et00122511-ansmvxvkql-portrait.jpg"
+                   <img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
                          alt="poster"
                          className="w-full h-full"
                          />
@@ -24,7 +26,7 @@ const MovieHero = () => {
                     <div className="absolute z-20 bottom-4">
                  <MovieInfo/>
                    </div>
-                  <img src="https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-ODQlICA5OGsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70/et00122511-ansmvxvkql-portrait.jpg"
+                  <img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
                          alt="poster"
                          className="w-full h-full"
                          />  
@@ -37,7 +39,7 @@ const MovieHero = () => {
                 />
                 <div className="absolute z-30 left-24 top-10 flex items-center gap-10 ">
                 <div className="w-64 h-96 ">
-                    <img src="https://in.bmscdn.com/iedb/movies/images/extra/vertical_logo/mobile/thumbnail/xxlarge/godzilla-vs-kong-et00122511-29-07-2021-03-44-24.jpg"
+                    <img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
                           alt="Poster"
                           className="w-full h-full rounded-xl" />
                 </div>
@@ -45,7 +47,7 @@ const MovieHero = () => {
                     <MovieInfo/>
                 </div>
                 </div>
-             <img src="https://in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/godzilla-vs-kong-et00122511-29-07-2021-03-44-24.jpg"
+             <img src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}
                          alt="poster"
                          className="w-full h-full"
                          />

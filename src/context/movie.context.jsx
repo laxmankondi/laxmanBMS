@@ -12,7 +12,7 @@ const MovieProvider = ({ children }) => {
    });
 
    return (
-   <MovieContext.Provider  value={{movie, setMovie}}>
+   <MovieContext.Provider  value={{movie,setMovie }}>
        {children}
    </MovieContext.Provider>
    );
